@@ -19,6 +19,13 @@ INTO
 VALUES
   ('mufasa', 2,1, current_date, 'pisoteado', 1, 'grande');
 
+      INSERT
+  INTO
+    animal
+    (nome_provisorio, idade_estimada, raca, data_entrada, condicoes_chegada, funcionario_id, porte)
+  VALUES
+    ('serpente', 14,3, current_date, 'Mordida', 1, 'pequena');
+
   INSERT
 INTO
   animal

@@ -1,5 +1,6 @@
 package br.com.ebac.animais_service.entidades;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.sql.Date;
@@ -38,6 +39,7 @@ public class Animal {
     @Column(nullable = false)
     private String condicoesChegada;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "funcionario_id", nullable = false)
     private Funcionario funcionario;

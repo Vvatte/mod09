@@ -52,7 +52,10 @@ public class Funcionario {
     }
 
     public Integer getNumeroAnimaisRecebidos() {
-        return numeroAnimaisRecebidos;
+        if (animais == null){
+            return 0;
+        }
+        return animais.size();
     }
 
     public void setNumeroAnimaisRecebidos(Integer numeroAnimaisRecebidos) {
